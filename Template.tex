@@ -1,0 +1,101 @@
+% MATH / CS LaTeX Assginments template
+% Amol Venkataraman, University of Waterloo
+% avenkata@uwaterloo.ca
+% Created and improved from 2023 onwards for course assignments at UWaterloo
+% Based on provided templates for various courses, credits go to respective professors
+
+% <- percent signs are used to comment
+\documentclass[12pt]{article}
+
+%%%%%% PACKAGES - this part loads additional material for LaTeX %%%%%%%%%
+% Nearly anything you want can be done in LaTeX if you load the right package 
+% (search ctan.org or google it if you are looking for something).  We will load
+% here a few that we need for this document or that we expect you to need later.
+
+% The next 3 lines are needed to fix shortcomings of TeX that only make sense given its 40-year history ...
+% Simple keep and ignore.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
+% Custom margins (and paper sizes etc.) because LaTeX else wastes much space
+\usepackage[margin=1in]{geometry}
+
+% The following packages are created by the American Mathematical Society (AMS)
+% and provide lots of tools for special fonts, symbols, theorems, and proof
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+% mathtools contains many detail improvements over ams and core tex
+\usepackage{mathtools}
+% to write short pseudocode, the quickest method is use verbatim, which means 
+% that everything is printed exactly as written.  But better-looking is to use
+% a package designed for pseudocode and that offers options how to make it look.
+\usepackage{verbatim}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\DontPrintSemicolon
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+
+% graphicx is required for images
+\usepackage{graphicx, algpseudocode}
+
+% enumitem used for customizing enumerations
+\usepackage[shortlabels]{enumitem}
+
+% tikz is the package used for drawing, in particular for drawing trees. You may also find simplified packages like tikz-qtree and forest useful
+\usepackage{tikz}
+\usetikzlibrary{shapes,chains,positioning}
+
+% hyperref allows links, urls, and many other PDF tricks.  We load it here
+%          in such a way that the PDF file has info about it
+\usepackage[%
+	pdftitle={MATH 999 Assignment 0}, %% CHANGEME
+	hidelinks,%
+]{hyperref}
+
+% xurl is used for long urls to stay within the margin
+\usepackage{xurl}
+\usepackage{float}% http://ctan.org/pkg/float
+
+
+% Define shortcuts for number sets
+\newcommand{\R}{\mathbb{R}} % Real numbers
+\newcommand{\N}{\mathbb{N}} % Natural numbers
+\newcommand{\Z}{\mathbb{Z}} % Integers
+\newcommand{\Q}{\mathbb{Q}} % Rational numbers
+\newcommand{\C}{\mathbb{C}} % Complex numbers
+\newcommand{\F}{\mathbb{F}} % General field
+
+\newcommand{\abs}[1]{\left| #1 \right|} % Absolute value
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert} % Norm
+\newcommand{\inner}[2]{\left\langle #1, #2 \right\rangle} % Inner product
+\newcommand{\bigcb}[1]{\left\{ #1 \right\}} % Big curly brackets
+\newcommand{\der}[2]{\frac{d #1}{d #2}} % Derivative
+\newcommand{\fain}[2]{\forall #1 \in #2} % For all ... in ...
+\newcommand{\exin}[2]{\exists #1 \in #2} % There exists ... in ...
+
+\newcommand{\st}{\text{s.t.}} % such that
+\newcommand{\spsm}{\ \ \ } % Small spacing
+\newcommand{\splg}{\ \ \ \ \ } % Large spacing
+
+
+%%%%%% COMMANDS - here you can define your own LaTeX-commands %%%%%%%%%
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{MATH 999 - Fall 2004} %% CHANGEME
+\chead{Assignment 0} %% CHANGEME
+\rhead{Amol Venkataraman} %% CHANGEME
+
+%%%%%% End of Preamble %%%%%%%%%%%%%
+
+\begin{document}
+
+% Document contents go here
+
+\begin{enumerate}
+    \item Document contents go here
+\end{enumerate}
+
+\end{document}
